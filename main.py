@@ -37,14 +37,14 @@ ld_b.end_bar('Loaded! (Use \"Ctrl+C\" to exit.)\n')
 
 while True:
 	# 參數定義
-	req_url=input("XVideo's URL: ")
+	req_url=input("XVideo URL: ")
 	print("Checking...")
 	# 過濾參數
 	req_url=req_url.replace(" ","")
 	pattern = re.compile(r"(^(http)(s)?://)(\w+)?\.?(xvideos\.com/\w+)")
 	result = pattern.match(req_url)
 	if not result:
-		print("This is not a XVideo's URL, try again.\n")
+		print("This is not a XVideo URL, Try again.\n")
 		continue
 	# 請求網站
 	print("Requesting...\n")
