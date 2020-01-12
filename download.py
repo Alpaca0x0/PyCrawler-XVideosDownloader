@@ -11,7 +11,6 @@ def download(req_headers,data_title,data_url,sys_debug=False):
 
 	while True:
 		data_dl_style=input("(1) Save mp4 (Default)\n(2) Save html\n(3) Save mp4, html\n(4) Cancel\nChoice download mode: ")
-		print("\n")
 		data_dl_style=data_dl_style.replace(" ","")
 		# cancel
 		if (data_dl_style==4):
@@ -24,7 +23,7 @@ def download(req_headers,data_title,data_url,sys_debug=False):
 
 		# save html
 		if (data_dl_style=="2") or (data_dl_style=="3"):
-			print("Creating link...")
+			print("\nCreating link...")
 			h_filepath="d_html/"
 			h_filename=filename+".html"
 			try:
@@ -35,7 +34,7 @@ def download(req_headers,data_title,data_url,sys_debug=False):
 				if sys_debug:
 					print("Found path!")
 			with open(h_filepath+h_filename,"w") as f:
-				f.write('<video controls="" autoplay="" name="media"><source src="'+data_url+'" type="video/mp4"></video>')
+				f.write('<!-- Github: Alpaca0x0 --><video controls="" autoplay="" name="media" style="height: 100%"><source src="'+data_url+'" type="video/mp4"></video>')
 			print("Link created!\n")
 
 		# save mp4
@@ -64,5 +63,5 @@ def download(req_headers,data_title,data_url,sys_debug=False):
 			print("\nTime: "+str((end-start)-((end-start)%1))+"s")
 			print("Saved!\n")
 
-
+		print("\n\n")
 		break
