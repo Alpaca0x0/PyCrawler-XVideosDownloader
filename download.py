@@ -24,7 +24,7 @@ def download(req_headers,data_title,data_url,sys_debug=False):
 
 		# save html
 		if (data_dl_style=="2") or (data_dl_style=="3"):
-			print("Creating link...\n")
+			print("Creating link...")
 			h_filepath="d_html/"
 			h_filename=filename+".html"
 			try:
