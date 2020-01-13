@@ -6,7 +6,7 @@
 # 所需函式庫:
     import sys
     import requests
-    from bs4 import BeautifulSoup as soup
+    from bs4 import BeautifulSoup
     import signal
     import re
     from fake_useragent import UserAgent
