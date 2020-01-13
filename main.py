@@ -10,15 +10,6 @@ _info=_info()
 作者：Alpaca羊駝
 版本：ver. 1.1
 
-## 修正
-	# 美觀
-	 - 新增啟動畫面
-	 - Loading_bar.py格式稍做修改
-	 - 改變了download.py中下載時的loading bar顯示方式
-## Bug
-	# 解析
-	 - data_url=re.findall(pattern,data_url)[0]取資料時，有機率發生「list index out of range」的問題
-
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMNMMMMMMMMMMMMdsNMMMMMMMNmmdhhdNMMMMMMMMMMMMMM
 MMMMMMh: .hMMMMMMMMm:  `oMMMMs`        `:odMMMMMMMMMM
@@ -35,7 +26,6 @@ MMMMMo. .yMMMMMMMMMMMNs./NMMm.-----//+oydMMMMMMMMMMMM
 MMMMMMMmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 """
-
 print("\
 __        __   _                           \n\
 \\ \\      / /__| | ___ ___  _ __ ___   ___  \n\

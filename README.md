@@ -21,7 +21,7 @@
 
 # 更動
  - 美觀
-   - 將名稱由「**XVideosDownloader**」更改為「**XD**」
+   - 重新命名程式名稱，由「**XVideosDownloader**」更改為「**XD**」
    - 下載的檔案存放目錄名稱由「**d_html**」及「**d_mp4**」更改為「**save_html**」、「**save_mp4**」
    - 新增了「**Welcome To Use XD**」啟動畫面
    - ***modules/loading_bar.py***、***download.py*** 格式稍做修改
