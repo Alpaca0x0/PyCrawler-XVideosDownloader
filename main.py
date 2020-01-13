@@ -1,5 +1,57 @@
 # -*- coding: utf-8 -*
-print("\n")
+class _info():
+	def __init__(self):
+		self.name="XD"
+		self.athr="Alpaca羊駝"
+		self.ver="1.1"
+		self.update="2019/01/14 00:34"
+_info=_info()
+"""
+作者：Alpaca羊駝
+版本：ver. 1.1
+
+## 修正
+	# 美觀
+	 - 新增啟動畫面
+	 - Loading_bar.py格式稍做修改
+	 - 改變了download.py中下載時的loading bar顯示方式
+## Bug
+	# 解析
+	 - data_url=re.findall(pattern,data_url)[0]取資料時，有機率發生「list index out of range」的問題
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMNMMMMMMMMMMMMdsNMMMMMMMNmmdhhdNMMMMMMMMMMMMMM
+MMMMMMh: .hMMMMMMMMm:  `oMMMMs`        `:odMMMMMMMMMM
+MMMMMMd.   oMMMMMMs`   `yMMMM:             .yMMMMMMMM
+MMMMMMMN/   :mMMN:    :mMMMMM.    +++/:`     /MMMMMMM
+MMMMMMMMM+   `yh.   `yMMMMMMM.    NMMMMMh:    +MMMMMM
+MMMMMMMMMMs        :mMMMMMMMM.   `MMMMMMMMo    mMMMMM
+MMMMMMMMMMM+      :MMMMMMMMMM.   `MMMMMMMMM`   hMMMMM
+MMMMMMMMMM+        .sNMMMMMMM.   `MMMMMMMMN    dMMMMM
+MMMMMMMMd.    :+`    `+mMMMMM.   `MMMMMmds.   -MMMMMM
+MMMMMMMo    -dMMNy-     -sNMM.    :-.`       +NMMMMMM
+MMMMMd-   .yMMMMMMMm+`   `yMM`            .+mMMMMMMMM
+MMMMMo. .yMMMMMMMMMMMNs./NMMm.-----//+oydMMMMMMMMMMMM
+MMMMMMMmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+"""
+
+print("\
+__        __   _                           \n\
+\\ \\      / /__| | ___ ___  _ __ ___   ___  \n\
+ \\ \\ /\\ / / _ \\ |/ __/ _ \\| '_ ` _ \\ / _ \\ \n\
+  \\ V  V /  __/ | (_| (_) | | | | | |  __/ \n\
+   \\_/\\_/ \\___|_|\\___\\___/|_| |_| |_|\\___| \n\
+ _____       _   _           __  ______  \n\
+|_   _|__   | | | |___  ___  \\ \\/ /  _ \\ \n\
+  | |/ _ \\  | | | / __|/ _ \\  \\  /| | | |\n\
+  | | (_) | | |_| \\__ \\  __/  /  \\| |_| |\n\
+  |_|\\___/   \\___/|___/\\___| /_/\\_\\____/ \n\
+")
+print("Version:	"+_info.ver)
+print("Last Update:	"+_info.update)
+print("")
+
 import sys
 sys.path.append("modules")
 import loading_bar as ld_b
