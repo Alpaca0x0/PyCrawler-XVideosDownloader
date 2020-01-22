@@ -100,8 +100,8 @@ while True:
 	if req.status_code != requests.codes.ok:
 		print("Um... Bad request :/\n")
 		continue
-	req.encoding="utf-8"
 	# 解析
+	req.encoding="utf-8"
 	req=soup(req.text,"html.parser")
 	data_title=req.title.text
 	data_url=req.select("div#video-player-bg script")[3].text

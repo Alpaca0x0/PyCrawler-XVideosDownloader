@@ -75,7 +75,7 @@ def download(req_headers,data_title,data_url,sys_debug=False):
 						f.write(data)
 					size += len(data)
 					now = time.time()
-					sys.stdout.write('\r'+"Downloading: ┋"+int(size/content_size*bar_size)*"█"+int(bar_size-(size/content_size*bar_size))*" "+"┋【"+str("%.02f"%round(size/chunk_size/1024,2))+"/"+str("%.02f"%round(float(content_size/chunk_size/1024),2))+" MB】"+"【"+str("%.02f"%round(float(size/content_size)*100,2))+"%"+"】【"+time_str(days="d ",hours="h ",minutes="m ",seconds="s",t_sec=int(now-start))+"】")
+					sys.stdout.write('\r'+"Downloading: "+u"\u250b"+int(size/content_size*bar_size)*u"\u2588"+int(bar_size-(size/content_size*bar_size))*" "+u"\u250b"+"【"+str("%.02f"%round(size/chunk_size/1024,2))+"/"+str("%.02f"%round(float(content_size/chunk_size/1024),2))+" MB】"+"【"+str("%.02f"%round(float(size/content_size)*100,2))+"%"+"】【"+time_str(days="d ",hours="h ",minutes="m ",seconds="s",t_sec=int(now-start))+"】")
 					sys.stdout.flush()
 			end = time.time()
 			print("\nSaved!")
