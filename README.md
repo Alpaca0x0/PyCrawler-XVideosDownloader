@@ -4,15 +4,9 @@
  - <del>反正XVideos的族群也不在少數www</del>
 
 # 所需函式庫:
-    import sys
-    import requests
-    from bs4 import BeautifulSoup
-    import signal
-    import re
-    from fake_useragent import UserAgent
-    import time
-    import os
-
+    ``` bash
+    pip install -r requirements.txt
+    ```
 # Info
     作者： Alpaca羊駝
     版本： ver. 1.1
