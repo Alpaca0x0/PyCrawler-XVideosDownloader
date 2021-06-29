@@ -3,12 +3,12 @@ class _info():
 	def __init__(self):
 		self.name="XD"
 		self.athr="Alpaca羊駝"
-		self.ver="1.1"
-		self.update="2019/01/14 00:34"
+		self.ver="1.2"
+		self.update="2021/06/29"
 _info=_info()
 """
 作者：Alpaca羊駝
-版本：ver. 1.1
+版本：ver. 1.2
 
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMNMMMMMMMMMMMMdsNMMMMMMMNmmdhhdNMMMMMMMMMMMMMM
@@ -103,12 +103,12 @@ while True:
 	# 解析
 	req.encoding="utf-8"
 	req=soup(req.text,"html.parser")
-	data_title=req.title.text
-	data_url=req.select("div#video-player-bg script")[3].text
+	data_title=req.title.string
+	data_url=(req.select("div#video-player-bg script")[3]).string
 	pattern = re.compile(r"html5player\.setVideoUrlHigh\(\'.*") 
 	data_url=re.findall(pattern,data_url)[0]
 	if sys_debug:
-		print("Catched: "+data_url+"\n")
+		print("Got: "+data_url+"\n")
 	pattern = re.compile(r"http.*\'")
 	data_url=re.findall(pattern,data_url)[0]
 	data_url=data_url.replace(" ","")

@@ -25,7 +25,7 @@ def download(req_headers,data_title,data_url,sys_debug=False):
 	print("Found: "+data_title+"\n")
 
 	while True:
-		data_dl_style=input("(1) Save mp4 (Default)\n(2) Save html\n(3) Save mp4, html\n(?) Cancel\nChoice download mode: ")
+		data_dl_style=input("(1) Save mp4 (Default)\n(2) Save html\n(3) Save mp4, html\n(4) Cancel\nChoice download mode: ")
 		print("")
 		data_dl_style=data_dl_style.replace(" ","")
 		# cancel
